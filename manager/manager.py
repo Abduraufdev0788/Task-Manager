@@ -64,3 +64,9 @@ class Manager:
             if user.username == username:
                 return True
         return False
+    def add_task(self):
+        title = input("task nomi: ")
+        description = input("task haqida: ")
+        self.user.add_task(title, description)
+        print_satatus("task muvaffaqiyatli qo'shildi.")
+        return self.user.tasks

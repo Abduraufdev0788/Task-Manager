@@ -16,6 +16,16 @@ def main() -> None:
                     print_menu()
 
                     choice = input(">")
+                    while True:
+                        if choise =="1":
+                            pass
+                        elif choise = "2":
+                            pass
+                        elif choise == '3':
+                            sys.exit(0)
+                        else:
+                            sys.exit(1)
+                        
         elif op == '2':
             manager.register()
         elif op == '3':
